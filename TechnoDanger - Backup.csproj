@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>Program</StartupObject>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Title>TD</Title>
+    <AssemblyName>TD</AssemblyName>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ico.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.10.0" />
+  </ItemGroup>
+
+</Project>
